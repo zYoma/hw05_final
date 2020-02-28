@@ -1,0 +1,11 @@
+{% extends "edit_post.html" %} 
+{% block title %}Новый пост {% endblock %}
+
+{% block content %}
+  {{ block.super }}
+{%endblock%}
+
+{% block header %}Добавить пост{% endblock %}
+{% block form %}{% url 'new_post' %}{% endblock %}
+{% block button %}Добавить{% endblock %}
+
